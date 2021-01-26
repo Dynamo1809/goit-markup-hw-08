@@ -1,0 +1,37 @@
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: $svg-color;
+  border: 1px solid $svg-color;
+  border-radius: 4px;
+}
+
+.logo-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.logo-svg {
+  fill: currentColor;
+}
+
+.clients-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
