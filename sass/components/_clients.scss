@@ -1,17 +1,39 @@
 .clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
   display: flex;
+  margin: -15px;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+
+.clients-item {
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .logo-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 90px;
   color: $svg-color;
   border: 1px solid $svg-color;
@@ -28,10 +50,4 @@
 
 .logo-svg {
   fill: currentColor;
-}
-
-.clients-item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }

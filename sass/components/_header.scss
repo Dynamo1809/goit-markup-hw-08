@@ -29,7 +29,8 @@ nav .logo span {
 }
 
 .nav-list {
-  display: flex;
+  // display: flex;
+  display: none;
 }
 
 .nav-list > .item {
@@ -38,69 +39,70 @@ nav .logo span {
   }
 }
 
-.nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $title-text-color;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-}
+// .nav-link {
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   color: $title-text-color;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.02em;
+// }
 
-.nav-link.current {
-  color: $accent-color;
-}
+// .nav-link.current {
+//   color: $accent-color;
+// }
 
 .nav-contacts {
-  display: flex;
+  display: none;
+  // display: flex;
 }
 
-.nav-contacts > .item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// .nav-contacts > .item {
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
-.nav-contact {
-  display: flex;
-  align-items: center;
-  color: $primary-text-color;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-}
+// .nav-contact {
+//   display: flex;
+//   align-items: center;
+//   color: $primary-text-color;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.02em;
+// }
 
-.nav-svg {
-  margin-right: 10px;
-  fill: currentColor;
-}
+// .nav-svg {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
 
-.nav-link,
-.nav-contact {
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
+// .nav-link,
+// .nav-contact {
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
 
-.nav-link {
-  position: relative;
-}
+// .nav-link {
+//   position: relative;
+// }
 
-.nav-link.current {
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: $accent-color;
-  }
-}
+// .nav-link.current {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 2px;
+//     background: $accent-color;
+//   }
+// }
