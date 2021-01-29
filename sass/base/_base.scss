@@ -4,6 +4,10 @@ body {
   color: $primary-text-color;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h2,
 h3 {
   color: $title-text-color;

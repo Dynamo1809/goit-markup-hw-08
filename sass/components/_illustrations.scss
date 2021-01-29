@@ -1,8 +1,9 @@
 .illustrations-section {
-  @media screen and(max-width:767px) {
+  padding-bottom: 94px;
+
+  @media screen and(max-width:1199px) {
     display: none;
   }
-  padding-bottom: 94px;
 }
 
 .illustrations-title {
