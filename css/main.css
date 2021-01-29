@@ -308,6 +308,12 @@ textarea {
   position: relative;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header-section .container {
+    width: 100%;
+  }
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
