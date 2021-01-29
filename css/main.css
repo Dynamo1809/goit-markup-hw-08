@@ -553,6 +553,12 @@ nav .logo span {
 
 @media screen and (min-width: 768px) {
   .nav-contact {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contact {
     font-size: 14px;
     line-height: 1.143;
   }
@@ -561,6 +567,12 @@ nav .logo span {
 .nav-svg {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-svg {
+    margin-right: 8px;
+  }
 }
 
 .hero-section {
