@@ -161,6 +161,7 @@ nav .logo span {
 }
 
 .nav-link.current {
+  pointer-events: none;
   color: $accent-color;
 }
 
