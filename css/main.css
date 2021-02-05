@@ -1450,7 +1450,7 @@ nav .logo span {
 .hidden-text {
   opacity: 0;
   position: absolute;
-  padding: 63px 24px;
+  padding: 77px 24px;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
@@ -1458,6 +1458,18 @@ nav .logo span {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hidden-text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hidden-text {
+    padding: 63px 24px;
+  }
 }
 
 .projects-content {
