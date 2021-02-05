@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Компания, занимающаяся продвижением бизнес-проектов:создание мобильных и десктопных веб-приложений. "/>
   <title>Студия</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -110,7 +111,7 @@
             Отправить
           </button>
     
-          <button class="modal-close-button" type="button" data-modal-close>
+          <button type="button" class="modal-close-button"  data-modal-close>
             <svg width="11" height="11">
               <use href="./images/sprite.svg#close"></use>
             </svg>
@@ -171,15 +172,71 @@
         <h2 class="illustrations-title">Чем мы занимаемся</h2>
         <ul class="illustrations-list">
           <li class="illustrations-item">
-            <img src="./images/img1.jpg" alt="Программист крупным планом работает за столом в офисе" width="370">
+            <picture>
+              <source 
+                srcset="
+                ./images/Desktop/webP/img1.webp 1x, 
+                ./images/Desktop/webP/img1@2x.webp 2x
+                " 
+                type="image/webp"
+              />
+              <source
+              srcset="
+              ./images/Desktop/jpg/img1.jpg 1x,
+              ./images/Desktop/jpg/img1@2x.jpg 2x
+              "
+              type="image/jpg"
+              />
+              <img 
+                src="./images/Desktop/jpg/img1.jpg" 
+                alt="Программист крупным планом работает за столом в офисе" width="370"
+              />
+            </picture>
             <p class="illustrations-text">десктопные приложения</p>
           </li>
           <li class="illustrations-item">
-            <img src="./images/img2.jpg" alt="Веб-дизайнеры пользовательского интерфейса разрабатывают приложения для смартфонов, команда разработчиков работает над интерфейсом мобильных телефонов" width="370">
+            <picture>
+              <source 
+                srcset="
+                ./images/Desktop/webP/img2.webp 1x,
+                ./images/Desktop/webP/img2@2x.webp 2x" 
+                type="image/webp"
+              />
+              <source
+              srcset="
+              ./images/Desktop/jpg/img2.jpg 1x,
+              ./images/Desktop/jpg/img2@2x.jpg 2x
+              "
+              type="image/jpg"
+              />
+              <img 
+                src="./images/Desktop/jpg/img2.jpg" 
+                alt="Веб-дизайнеры разрабатывают приложения для смартфонов, команда разработчиков работает над интерфейсом мобильных телефонов" width="370"
+              />
+            </picture>
             <p class="illustrations-text">мобильные приложения</p>
           </li>
           <li class="illustrations-item">
-            <img src="./images/img3.jpg" alt="Креативный художник веб-дизайна с рабочим графическим планшетом для выбора цвета" width="370">
+            <picture>
+              <source 
+                srcset="
+                ./images/Desktop/webP/img3.webp 1x,
+                ./images/Desktop/webP/img3@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+              srcset="
+              ./images/Desktop/jpg/img3.jpg 1x,
+              ./images/Desktop/jpg/img3@2x.jpg 2x
+              "
+              type="image/jpg"
+              />
+              <img 
+                src="./images/Desktop/jpg/img3.jpg"
+                alt="Креативный художник веб-дизайна с рабочим графическим планшетом для выбора цвета" width="370"
+              />
+            </picture>
             <p class="illustrations-text">дизайнерские решения</p>
           </li>
         </ul>
@@ -192,33 +249,33 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">
-            <img src="./images/photo1.jpg" alt="Игорь Демьяненко" width="270">
+            <img src="./images/Mobile/jpg/photo1.jpg" alt="Игорь Демьяненко" width="270">
             <h3 class="teammate">Игорь Демьяненко</h3>
             <p class="teammate-profession" lang="en">Product Designer</p>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href=".">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -227,33 +284,33 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/photo2.jpg" alt="Ольга Репина" width="270">
+            <img src="./images/Mobile/jpg/photo2.jpg" alt="Ольга Репина" width="270">
             <h3 class="teammate">Ольга Репина</h3>
             <p class="teammate-profession" lang="en">Frontend Developer</p>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -262,33 +319,33 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/photo3.jpg" alt="Николай Тарасов" width="270">
+            <img src="./images/Mobile/jpg/photo3.jpg" alt="Николай Тарасов" min-width="270">
             <h3 class="teammate">Николай Тарасов</h3>
             <p class="teammate-profession" lang="en">Marketing</p>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -297,33 +354,33 @@
             </ul>
           </li>
           <li class="team-item">
-            <img src="./images/photo4.jpg" alt="Михаил Ермаков" width="270">
+            <img src="./images/Mobile/jpg/photo4.jpg" alt="Михаил Ермаков" width="270">
             <h3 class="teammate">Михаил Ермаков</h3>
             <p class="teammate-profession" lang="en">UI Designer</p>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a class="social-link" href="">
+                <a class="social-link" href="#">
                   <svg width="20" height="20">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
@@ -341,42 +398,42 @@
         <h2 class="clients-title team-title">Постоянные клиенты<h2>
           <ul class="clients-list">
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="44" height="49">
                   <use href="./images/sprite.svg#logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="40" height="52">
                   <use href="./images/sprite.svg#logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="41" height="47">
                   <use href="./images/sprite.svg#logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="82" height="42">
                   <use href="./images/sprite.svg#logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="59" height="47">
                   <use href="./images/sprite.svg#logo5" ></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
-              <a class="logo-link" href="">
+              <a class="logo-link" href="#">
                 <svg class="logo-svg" width="89" height="46">
                   <use href="./images/sprite.svg#logo6"></use>
                 </svg>
@@ -407,28 +464,28 @@
         <b class="join">ПРИСОЕДИНЯЙТЕСЬ</b>
         <ul class="social-list lower">
           <li class="social-item">
-            <a class="social-link lower" href="">
+            <a class="social-link lower" href="#">
               <svg width="20" height="20">
                 <use href="./images/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link lower" href="">
+            <a class="social-link lower" href="#">
               <svg width="20" height="20">
                 <use href="./images/sprite.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link lower" href="">
+            <a class="social-link lower" href="#">
               <svg width="20" height="20">
                 <use href="./images/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link lower" href="">
+            <a class="social-link lower" href="#">
               <svg width="20" height="20">
                 <use href="./images/sprite.svg#linkedin"></use>
               </svg>
