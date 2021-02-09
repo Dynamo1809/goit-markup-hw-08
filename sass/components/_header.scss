@@ -84,7 +84,7 @@ nav .logo span {
     position: absolute;
     top: 100%;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     width: 100%;
     z-index: 999;
     padding-top: 60px;
@@ -93,7 +93,7 @@ nav .logo span {
     background-color: $primary-bg-color;
 
     &.is-open {
-      transform: translateY(0%);
+      transform: translateX(0%);
       transition: transform 350ms linear;
       opacity: 1;
       pointer-events: initial;
