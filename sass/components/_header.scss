@@ -84,6 +84,7 @@ nav .logo span {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 99;
     transform: translateY(-100%);
     transition: transform 250ms linear, opacity 250ms linear;
     opacity: 0;

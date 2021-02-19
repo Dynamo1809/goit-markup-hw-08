@@ -415,6 +415,7 @@ nav .logo span {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 99;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
