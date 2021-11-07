@@ -1,5 +1,11 @@
 .header-section {
   position: relative;
+  @media screen and(max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -13,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .nav-logo {
   display: inline-flex;
   padding-top: 16px;
@@ -27,6 +34,7 @@
     margin-right: 93px;
   }
 }
+
 .logo {
   color: #2196f3;
   font-family: $logo-font-family;
@@ -40,6 +48,7 @@
     line-height: 1.19;
   }
 }
+
 nav .logo span {
   color: #000000;
   font-weight: 400;
@@ -84,21 +93,25 @@ nav .logo span {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 99;
+    z-index: 89;
     transform: translateY(-100%);
-    transition: transform 250ms linear, opacity 250ms linear;
     opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
     pointer-events: none;
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
     text-align: center;
     background-color: $primary-bg-color;
 
     &.is-open {
-      transform: translateY(0);
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       opacity: 1;
+      transform: translateY(0);
       pointer-events: initial;
+      height: 100%;
     }
   }
 }
@@ -174,9 +187,6 @@ nav .logo span {
 
 .nav-contacts {
   display: inline-block;
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-  }
 
   @media screen and(min-width:768px) {
     margin-left: 84px;
