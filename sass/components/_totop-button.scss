@@ -1,0 +1,29 @@
+.toTop {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 40%;
+  border: 2px solid $primary-text-color;
+  background-color: $accent-rgba-color;
+  color: $primary-bg-color;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 8px;
+  padding-top: 8px;
+  right: 30px;
+  bottom: 30px;
+  &:hover {
+    color: $primary-bg-color;
+    background-color: $accent-color;
+  }
+}
+
+.toTop .icon-arrow-up {
+  fill: currentColor;
+}
