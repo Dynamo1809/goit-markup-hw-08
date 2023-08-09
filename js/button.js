@@ -1,6 +1,6 @@
 $(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() != 0) { 
+        if($(this).scrollTop() > 300) { 
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();
@@ -8,6 +8,6 @@ $(function() {
     });
      
     $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
+        $('body,html').animate({scrollTop:0});
     });
 });

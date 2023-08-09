@@ -3,6 +3,18 @@ body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $accent-color;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb-color;
+  border-radius: 10px;       
+  border: 2px solid $accent-color;  
+}
 
 body.modal-open {
   overflow: hidden;
